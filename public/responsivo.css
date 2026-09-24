@@ -1,0 +1,195 @@
+@media screen and (max-width: 450px) {
+    body{
+        flex-direction: column;
+        min-height: 100dvh;
+        height: 100dvh;
+        width: 100dvw;
+    }
+
+    #svg1{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 30vh;
+        z-index: -10;
+    }
+    
+    #svg2{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 30vh;
+        z-index: -10;
+    }
+
+    h2{
+        width: 90%;
+        font-size: 18px;
+    }
+
+    #step1{
+        position: absolute;
+        top: 0;
+        height: auto;
+        gap: 8dvh;
+        padding-top: 22dvh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #step2{
+        position: absolute;
+        top: 0;
+        min-height: 50dvh;
+        height: auto;
+        padding-top: 15dvh;
+        padding-bottom: 110px;
+        gap: 20px;
+    }
+
+    #stepFinal{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    height: 80%;
+    margin-top: unset;
+    padding-top: 8vh;
+}
+
+    #step1, #step2, #stepFinal{
+        width: 100%;
+    }
+
+    .spanStep{
+        height: auto;
+        gap: 15px;
+    }
+    
+    #opcCateg{
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        height: auto;
+        width: 100%;
+    }
+    
+    .btnCateg{
+        display: inline-block;
+        width: 45%;
+        height: 50px;
+    }
+
+    #divButtons {
+        position: fixed;
+        bottom: 7dvh;
+        display: flex;
+        width: 90%;
+        height: 50px;
+        align-items: center;
+        justify-content: space-between;
+    }
+      
+    #bBack, #bNext, #bRecalc{
+        width: 47%;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    #bNext, #bRecalc{
+        position: unset;
+        bottom: unset;
+        right: unset;
+    }
+
+    #bBack{
+        position: unset;
+        top: unset;
+        left: unset;
+    }
+
+    input{
+        padding: 0 5%;
+        width: 90%;
+        font-size: 18px;
+    }
+
+    #step2 > .spanStep{
+        height: 150px;
+        gap: 15%;
+    }
+    
+    #step2 > .spanStep > div{
+        display: flex;
+        gap: 2%;
+        justify-content: center;
+        width: 90%;
+    }
+
+    #step2 > .spanStep > div> input{
+        height: 100%;
+        width: 82%;
+    }
+    
+    #step2 > .spanStep > h2{
+        max-width: 95%;
+    }
+
+    
+    #bAdd, #bLista{
+        font-size: 30px;
+        line-height: 35px;
+        height: 50px;
+        width: 55px;
+    }
+
+    #grupos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        border-radius: 10px;
+        height: auto;
+        width: 90%;
+        padding-bottom: 120px;
+}
+    
+    .time{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        background-color: #ffffff;
+        border-radius: 10px;
+        height: auto;
+        width: 90% !important;
+    }
+
+    #listaPessoas{
+        position: fixed;
+        width: 90dvw;
+        height: 70dvh;
+        top: 15dvh;
+        left: 5dvw;
+    }
+
+    #ulNames li {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .btnRemover {
+        margin-left: unset;
+    }
+
+    #layoff{
+        position: fixed;
+        overflow-y: hidden;
+    }
+    
+}
+

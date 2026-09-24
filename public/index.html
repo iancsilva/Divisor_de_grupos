@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisão de Grupos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <script type="module" src="firebase.js"></script>
+</head>
+<body>
+    <script src="script.js" defer></script>
+    <img src="svg/Vector 3.svg" id="svg1">
+    <img src="svg/Vector 4.svg" id="svg2">
+        
+            <div id="step1" class="steps">
+                    <span class="spanStep">
+                        <h2>Quantidade de grupos (mínimo de 2)</h2>
+                        <input type="number" id="inpGrup"  min="2" placeholder="Ex: 3">
+                    </span>
+                    <span class="spanStep">
+                        <h2>Insira as categorias/características (máximo de 12)</h2>
+                        <input type="text" id="inpCategories" placeholder="Ex: homem, mulher, lateral, goleiro...">
+                    </span>
+            </div>
+
+
+            <div id="step2" class="steps">
+                    <span class="spanStep">
+                        <h2>Digite as pessoas/coisas, selecione as categorias das quais fazem parte e vá adicionando à lista</h2>
+                        <div><button id="bLista">&#9776;</button> <input type="text" id="inpNames" placeholder="Ex: João, Marcelo, Pedro..." required> <button id="bAdd">+</button></div>
+                    </span>
+                    <div id="opcCateg">
+                    </div>
+                    <div id="listaPessoas">
+                        <div id="divNames">
+                            <h2>Lista</h2>
+                            <ul id="ulNames"></ul>
+                        </div>
+                    </div>
+            </div>
+        
+        <div id="stepFinal">
+          <h1 id="tituloGeral">Grupos</h1>
+          <div id="grupos">
+            
+          </div>
+        </div>
+
+          <div id="layoff"></div>
+          <div id="divButtons">
+              <button id="bBack" type="">Voltar</button>
+              <button id="bNext">Próximo</button>
+              <button id="bRecalc">Recalcular</button>
+          </div>
+
+          
+</body>
+</html>
